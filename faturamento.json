@@ -1,0 +1,126 @@
+{
+    "faturamento":[
+        {
+            "dia": 1,
+            "lucro_dia": 1520
+        },
+        {
+            "dia": 2,
+            "lucro_dia": 2200
+        },
+        {
+            "dia": 3,
+            "lucro_dia": 1210
+        },
+        {
+            "dia": 4,
+            "lucro_dia": 560
+        },
+        {
+            "dia": 5,
+            "lucro_dia": 200
+        },
+        {
+            "dia": 6,
+            "lucro_dia": 2455
+        },
+        {
+            "dia": 7,
+            "lucro_dia": 0
+        },
+        {
+            "dia": 8,
+            "lucro_dia": 0
+        },
+        {
+            "dia": 9,
+            "lucro_dia": 425
+        },
+        {
+            "dia": 10,
+            "lucro_dia": 1450
+        },
+        {
+            "dia": 11,
+            "lucro_dia": 2565
+        },
+        {
+            "dia": 12,
+            "lucro_dia": 1250
+        },
+        {
+            "dia": 13,
+            "lucro_dia": 1650
+        },
+        {
+            "dia": 14,
+            "lucro_dia": 0
+        },
+        {
+            "dia": 15,
+            "lucro_dia": 0
+        },
+        {
+            "dia": 16,
+            "lucro_dia": 980
+        },
+        {
+            "dia": 17,
+            "lucro_dia": 570
+        },
+        {
+            "dia": 18,
+            "lucro_dia": 1270
+        },
+        {
+            "dia": 19,
+            "lucro_dia": 2010
+        },
+        {
+            "dia": 20,
+            "lucro_dia": 3210
+        },
+        {
+            "dia": 21,
+            "lucro_dia": 0
+        },
+        {
+            "dia": 22,
+            "lucro_dia": 0
+        },
+        {
+            "dia": 23,
+            "lucro_dia": 445
+        },
+        {
+            "dia": 24,
+            "lucro_dia": 1015
+        },
+        {
+            "dia": 25,
+            "lucro_dia": 725
+        },
+        {
+            "dia": 26,
+            "lucro_dia": 1110
+        },
+        {
+            "dia": 27,
+            "lucro_dia": 3250
+        },
+        {
+            "dia": 28,
+            "lucro_dia": 0
+        },
+        {
+            "dia": 29,
+            "lucro_dia": 0
+        },
+        {
+            "dia": 30,
+            "lucro_dia": 425
+        }     
+ 
+    
+    ]
+}
