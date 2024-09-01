@@ -7,4 +7,4 @@ while k < indice:
     soma = soma + k
     
 print(soma)
-    
+## A soma é '91'    
