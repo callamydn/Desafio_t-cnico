@@ -29,25 +29,25 @@ dias_zerados = 0
 total_dias = 30
 
 # Abrindo Arquivo:
-with open('faturamento.json','r') as fat:
+with open('dados.json','r') as fat:
         dados = json.load(fat)
 
 # Preenchendo as variaveis com os valores:
-for l in dados['faturamento']:
+for l in dados:
 
-    if l['lucro_dia'] < menor_lucro and l['lucro_dia'] != 0:
-        menor_lucro = l['lucro_dia']
+    if l['valor'] < menor_lucro and l['valor'] != 0:
+        menor_lucro = l['valor']
         dia_menor = l['dia']
             
-    if l['lucro_dia'] > maior_lucro and l['lucro_dia'] != 0:
-        maior_lucro = l['lucro_dia']
+    if l['valor'] > maior_lucro and l['valor'] != 0:
+        maior_lucro = l['valor']
         dia_maior = l['dia']
             
-    if l['lucro_dia'] == 0:
+    if l['valor'] == 0:
         total_dias -= 1
             
-    if l['lucro_dia'] != 0:
-        media_mes += l['lucro_dia']
+    if l['valor'] != 0:
+        media_mes += l['valor']
         
     
 # Segunda definição de Varivaveis situacionais do Menu:
@@ -55,9 +55,9 @@ media = media_mes // total_dias
 med_lucro_maior = []
 dia_med_lucro_maior = []
 
-for l_2 in dados['faturamento']:
-    if l_2['lucro_dia'] >= media:
-        acima_lu = l_2['lucro_dia']
+for l_2 in dados:
+    if l_2['valor'] >= media:
+        acima_lu = l_2['valor']
         acima_dia = l_2['dia']
         med_lucro_maior.append(acima_lu)
         dia_med_lucro_maior.append(acima_dia)
@@ -71,18 +71,18 @@ while menu != 0:
     
         case 1:
             print('Dia Com o Menor Faturamento Foi:')
-            print(f'Dia - {dia_menor}\nFaturamento - {menor_lucro} R$\n')
+            print(f'Dia - {dia_menor}\nFaturamento - {menor_lucro:.2f} R$\n')
             sleep(3)    
             
         case 2:   
             print('Dia Com o Maior Faturamento Foi:')
-            print(f'Dia: {dia_maior}\nFaturamento: {maior_lucro} R$\n')
+            print(f'Dia: {dia_maior}\nFaturamento: {maior_lucro:.2f} R$\n')
             sleep(3)
             
         case 3:
-            print(f'Foram {len(dia_med_lucro_maior)} Dias, Cujo o Lucro Foi Maior que a Média - {media} R$ :')    
+            print(f'Foram {len(dia_med_lucro_maior)} Dias, Cujo o Lucro Foi Maior que a Média - {media:.2f} R$ :')    
             for j in range(0, range_dia):
-                print (f'Dia - {dia_med_lucro_maior[0]} // Lucro - {med_lucro_maior[0]} R$')
+                print (f'Dia - {dia_med_lucro_maior[0]} // Lucro - {med_lucro_maior[0]:.2f} R$')
                 med_lucro_maior.pop(0)
                 dia_med_lucro_maior.pop	(0)
             sleep(3)
